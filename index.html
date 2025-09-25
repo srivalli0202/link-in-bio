@@ -2,73 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8>"
+    <title> Link in Bio</title>
 
-  </head>
-    <body>
-      
-      <div class="main-containner">
-        <div class="image-row">
-          
-          <img src="/thumbnails/profile_1-pic.jpg" >
-
-          <img class="avatar-image" src="profile_1.jpg" alt="Sri headshot">
-          
-        </div>
-        <div class="name-row">
-          Sri
-        </div>
-        <div class="social-icons-row">
-
-          <a href="https://twitter.com/Sri" target="_blank">
-            Twitter
-          </a>
-          
-          <a href="https://wwww.instagram.com/Sri" target="_blank">
-            Instagram
-          </a>
-          <a href="https://wwww.linkedin.com/Sri" target="_blank">
-            Linkedin
-          </a>
-          <a href="https://github.com/Sri" target="_blank">
-            Github
-          </a>
-        </div>
-
-        <div class="links-row">
-          <div class="item">
-            <img src="/thumbnails/Music.jpg">
-            <img class="thumbnail" src="thumbnails/Music.jpg" alt="Music">
-            
-            <a target="_blank" herf="http://paulgraham.com/storesongs.html">
-              How to store songs
-            </a>
-          </div>
-
-          <div class="item">
-            <img src="/thumbnails/freedom.jpg">
-            <a target="_blank" herf="http://publicfreedom/freedom.html">
-              share your ideas
-            </a>
-          </div>
-
-          <div class="item">
-            <img src="/thumbnails/Achievement.jpg">
-            <a target="_blank" herf="http://goalachievement/freedom.html">
-              How to reach goal
-            </a>
-          </div>
-          <a herf="https"
-        </div>
-
-   
-      </div>
-      
-      <style>
-        body {
-          padding-top: 10px;
-          padding-bottom: 10px;
+    <style>
+      /* page background */
+        html, body {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          color: #fff;
+          background: radial-gradient(circle at 20% 0%, #ff8b17, #e6751f, #cc6021, #b24d22, #963b1f, #7b2b1c, #601d16, #45100e);
         }
 
+        .main-container{
+          max-width: 420px;
+          margin:0 auto;
+          padding: 32px 20px 60px;
+          text-align: center;
+        }
         
         /*profile picture */
         .avatar-image{
@@ -76,34 +29,99 @@
           height: 128px;
           object-fit: cover;
           border-radius:128px ;
+          display: block;
+          margin: 12px;
         }
-        /*thumbnails*/
-        .thumbnail {
+
+        .name-row {
+          font-size: 22px; 
+          font-weight: 700;
+          margin: 8px;
+        }
+
+        /*social icons*/
+        .social-icons-row a {
+          display: flex;
+          justify-content: center;
+          gap: 18px;
+          margin-bottom: 26px;
+          color: #fff;
+          font-weight: 600;
+        }
+
+        /* links list*/
+        .links-row {
+          margin-top: 22px;}
+        .item {
+          background: rgba(0,0,0,.25);
+          border-radius: 28px;
+          margin: 10px 0;
+          overflow: hidden;
+        }
+        .item a {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 12px 16px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        item a:hover { background: rgba(0,0,0,.25);}
+
+        /*circular thumbnails*/
+        .thumbnail{
           width: 48px;
           height: 48px;
           border-radius: 48px;
-          object-fit:cover;
+          object-fit: cover;
+          flex: 0 0 48px;
         }
-
-        .thumbnail {
-          border: solid;
-          
-        }
-
-        html {
-          min-height: 10px;
-        }
-
-        body {
-          min-height: 1px;
-          padding-top: 1px;
-          padding-bottom: 1px;
-          background: linear-gradient(135deg, #f7ff0a, #a8f33f, #59e063, #00ca7f, #00b091, #009697, #007b8f, #0a607b);
-        }
-
-       
-        
       </style>
+
+  </head>
+    <body>
+      
+      <div class="main-containner">
+        <div class="image-row">
+          <img class="avatar-image" src="profile_1.jpg" alt="Sri headshot">   
+        </div>
+
+        <div class="name-row"> Sri
+        </div>
+
+        <div class="social-icons-row">
+           <a href="https://twitter.com/Sri" target="_blank">
+            <img src="icons/twitter.png" alt="Twitter" class="social-icon"</a>
+          
+          <a href="https://wwww.instagram.com/Sri" target="_blank">Instagram</a>
+          <a href="https://wwww.linkedin.com/Sri" target="_blank">Linkedin</a>
+          <a href="https://github.com/Sri" target="_blank">Github</a>
+        </div>
+
+        <div class="links-row">
+          <div class="item">
+            <a href="http://paulgraham.com/storesongs.html" target="_blank">
+              <img class="thumbnail" src="thumbnails/music-pic.jpg" alt="Music"/>
+              How to store songs
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="http://publicfreedom/freedom.html" target="_blank">
+              <img class="thumbnail" src="/thumbnails/freedom.jpg" alt="Freedom"/>
+              share your ideas
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="http://goalachievement/freedom.html" target="_blank">
+               <img class="thumbnail" src="/thumbnails/achievement.jpg" alt="Achievement"/>
+              How to reach goal
+            </a>
+          </div>
+        </div>
+      </div>
     </body>
   
 </html>
