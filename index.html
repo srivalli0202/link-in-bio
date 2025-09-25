@@ -10,15 +10,16 @@
           height: 100%;
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          color: #fff;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          color: rgba(255, 255, 255, 1.0);
           background: radial-gradient(circle at 20% 0%, #ff8b17, #e6751f, #cc6021, #b24d22, #963b1f, #7b2b1c, #601d16, #45100e);
         }
 
         .main-container{
-          max-width: 420px;
-          margin:0 auto;
+          max-width: 640px;
+          margin-bottom: 20px;
+          margin: auto;
           padding: 32px 20px 60px;
           text-align: center;
         }
@@ -28,47 +29,55 @@
           width: 128px;
           height: 128px;
           object-fit: cover;
-          border-radius:128px ;
+          border-radius:50% ;
           display: block;
-          margin: 12px;
+          margin:0 auto 12px;
+          justify-content: center;
         }
 
         .name-row {
-          font-size: 22px; 
-          font-weight: 700;
-          margin: 8px;
+          font-size: 24px; 
+          font-weight: bold;
+          text-align: center;
+          font-family: "Georgia";
+          margin-top: 20px;
         }
 
         /*social icons*/
-        .social-icons-row a {
+        .social-icons-row {
           display: flex;
-          justify-content: center;
-          gap: 18px;
-          margin-bottom: 26px;
+          justify-content: space-around;
+          align-items: center;
+          margin: 30px 0;
+        }
+        .social-icons-row a {
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: space-around;
           color: #fff;
-          font-weight: 600;
+          
+          
         }
 
         /* links list*/
         .links-row {
           margin-top: 22px;}
         .item {
-          background: rgba(0,0,0,.25);
-          border-radius: 28px;
+          background-color: rgba(149, 123, 173, 0.5);
+          border-radius: 1000px;
           margin: 10px 0;
           overflow: hidden;
         }
         .item a {
           display: flex;
           align-items: center;
-          gap: 12px;
-          padding: 12px 16px;
-          color: #fff;
-          text-decoration: none;
-          font-weight: 700;
+          padding: 5px;
+          padding-right: 53px;
+          box-shadow: 4px 4px 10px 0px rgb(122,32,122,0.5);
+          color:#fff;
+          font-weight: 900;
         }
-        item a:hover { background: rgba(0,0,0,.25);}
-
+  
         /*circular thumbnails*/
         .thumbnail{
           width: 48px;
@@ -91,17 +100,20 @@
         </div>
 
         <div class="social-icons-row">
-           <a href="https://twitter.com/Sri" target="_blank">
-            <img src="icons/twitter.png" alt="Twitter" class="social-icon"</a>
+           <a href="https://twitter.com/Sri" target="_blank">Twitter</a>
+            
           
           <a href="https://wwww.instagram.com/Sri" target="_blank">Instagram</a>
-          <a href="https://wwww.linkedin.com/Sri" target="_blank">Linkedin</a>
-          <a href="https://github.com/Sri" target="_blank">Github</a>
+          <a href="https://wwww.linkedin.com/Sri" target="_blank">
+            Linkedin
+          </a>
+          <a href="https://github.com/Sri" target="_blank">
+            Github</a>
         </div>
 
-        <div class="links-row">
+        <div class="links-text">
           <div class="item">
-            <a href="http://paulgraham.com/storesongs.html" target="_blank">
+            <a class="link-text target="_blank" href="http://paulgraham.com/storesongs.html" >
               <img class="thumbnail" src="thumbnails/music-pic.jpg" alt="Music"/>
               How to store songs
             </a>
